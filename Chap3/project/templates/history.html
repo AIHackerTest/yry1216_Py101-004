@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block content %}
+{% if hist==[] %}
+    <p align="center">无历史查询信息</p>
+{% endif %}
+
+{% for record in hist %}
+    <p align="center">{{ record }}<br></p>
+{% endfor %}
+{% endblock %}
